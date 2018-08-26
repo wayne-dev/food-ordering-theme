@@ -23,7 +23,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div id="page" class="container-fluid">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'foodordering' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
@@ -53,5 +53,5 @@
 	endif;
 	?>
 
-	<div class="site-content-contain">
+	<div class="container">
 		<div id="content" class="site-content">

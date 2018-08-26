@@ -425,7 +425,9 @@ function foodordering_scripts() {
 		wp_enqueue_style( 'foodordering-ie9', get_theme_file_uri( '/assets/css/ie9.css' ), array( 'foodordering-style' ), '1.0' );
 		wp_style_add_data( 'foodordering-ie9', 'conditional', 'IE 9' );
 	}
-
+	// Bootstraps
+	wp_enqueue_style( 'foodordering-bootstrap', get_theme_file_uri( '/assets/css/bootstrap.css' ), array( 'foodordering-style' ), '1.0' );
+	wp_enqueue_script( 'bootstrap', get_theme_file_uri( '/assets/js/bootstrap.js' ), array( 'jquery' ), '4.1.3', true );
 	// Load the Internet Explorer 8 specific stylesheet.
 	wp_enqueue_style( 'foodordering-ie8', get_theme_file_uri( '/assets/css/ie8.css' ), array( 'foodordering-style' ), '1.0' );
 	wp_style_add_data( 'foodordering-ie8', 'conditional', 'lt IE 9' );
