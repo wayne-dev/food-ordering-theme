@@ -5,7 +5,7 @@
  * @link https://codex.wordpress.org/Custom_Headers
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage FoodOrdering
  * @since 1.0
  */
 
@@ -17,9 +17,9 @@
 function foodordering_custom_header_setup() {
 
 	/**
-	 * Filter Twenty Seventeen custom-header support arguments.
+	 * Filter Food Ordering custom-header support arguments.
 	 *
-	 * @since Twenty Seventeen 1.0
+	 * @since Food Ordering 1.0
 	 *
 	 * @param array $args {
 	 *     An array of custom-header support arguments.

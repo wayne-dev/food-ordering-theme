@@ -3,7 +3,7 @@
  * SVG icons related functions and filters
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage FoodOrdering
  * @since 1.0
  */
 
@@ -62,7 +62,7 @@ function foodordering_get_svg( $args = array() ) {
 	$aria_labelledby = '';
 
 	/*
-	 * Twenty Seventeen doesn't use the SVG title or description attributes; non-decorative icons are described with .screen-reader-text.
+	 * Food Ordering doesn't use the SVG title or description attributes; non-decorative icons are described with .screen-reader-text.
 	 *
 	 * However, child themes can use the title and description to add information to non-decorative SVG icons to improve accessibility.
 	 *
@@ -210,9 +210,9 @@ function foodordering_social_links_icons() {
 	);
 
 	/**
-	 * Filter Twenty Seventeen social links icons.
+	 * Filter Food Ordering social links icons.
 	 *
-	 * @since Twenty Seventeen 1.0
+	 * @since Food Ordering 1.0
 	 *
 	 * @param array $social_links_icons Array of social links icons.
 	 */

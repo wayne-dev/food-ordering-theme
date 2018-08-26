@@ -1,9 +1,9 @@
 <?php
 /**
- * Twenty Seventeen: Customizer
+ * Food Ordering: Customizer
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage FoodOrdering
  * @since 1.0
  */
 
@@ -86,9 +86,9 @@ function foodordering_customize_register( $wp_customize ) {
 	) );
 
 	/**
-	 * Filter number of front page sections in Twenty Seventeen.
+	 * Filter number of front page sections in Food Ordering.
 	 *
-	 * @since Twenty Seventeen 1.0
+	 * @since Food Ordering 1.0
 	 *
 	 * @param int $num_sections Number of front page sections.
 	 */
@@ -157,7 +157,7 @@ function foodordering_sanitize_colorscheme( $input ) {
 /**
  * Render the site title for the selective refresh partial.
  *
- * @since Twenty Seventeen 1.0
+ * @since Food Ordering 1.0
  * @see foodordering_customize_register()
  *
  * @return void
@@ -169,7 +169,7 @@ function foodordering_customize_partial_blogname() {
 /**
  * Render the site tagline for the selective refresh partial.
  *
- * @since Twenty Seventeen 1.0
+ * @since Food Ordering 1.0
  * @see foodordering_customize_register()
  *
  * @return void

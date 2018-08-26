@@ -7,7 +7,7 @@
  * Learn more: https://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage FoodOrdering
  * @since 1.0
  * @version 1.0
  */
@@ -31,9 +31,9 @@ get_header(); ?>
 		if ( 0 !== foodordering_panel_count() || is_customize_preview() ) : // If we have pages to show.
 
 			/**
-			 * Filter number of front page sections in Twenty Seventeen.
+			 * Filter number of front page sections in Food Ordering.
 			 *
-			 * @since Twenty Seventeen 1.0
+			 * @since Food Ordering 1.0
 			 *
 			 * @param int $num_sections Number of front page sections.
 			 */

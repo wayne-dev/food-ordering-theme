@@ -3,7 +3,7 @@
  * Additional features to allow styling of the templates
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage FoodOrdering
  * @since 1.0
  */
 
@@ -76,9 +76,9 @@ function foodordering_panel_count() {
 	$panel_count = 0;
 
 	/**
-	 * Filter number of front page sections in Twenty Seventeen.
+	 * Filter number of front page sections in Food Ordering.
 	 *
-	 * @since Twenty Seventeen 1.0
+	 * @since Food Ordering 1.0
 	 *
 	 * @param int $num_sections Number of front page sections.
 	 */

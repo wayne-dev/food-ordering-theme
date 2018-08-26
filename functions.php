@@ -1,16 +1,16 @@
 <?php
 /**
- * Twenty Seventeen functions and definitions
+ * Food Ordering functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage FoodOrdering
  * @since 1.0
  */
 
 /**
- * Twenty Seventeen only works in WordPress 4.7 or later.
+ * Food Ordering only works in WordPress 4.7 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
@@ -28,7 +28,7 @@ function foodordering_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed at WordPress.org. See: https://translate.wordpress.org/projects/wp-themes/foodordering
-	 * If you're building a theme based on Twenty Seventeen, use a find and replace
+	 * If you're building a theme based on Food Ordering, use a find and replace
 	 * to change 'foodordering' to the name of your theme in all the template files.
 	 */
 	load_theme_textdomain( 'foodordering' );
@@ -204,9 +204,9 @@ function foodordering_setup() {
 	);
 
 	/**
-	 * Filters Twenty Seventeen array of starter content.
+	 * Filters Food Ordering array of starter content.
 	 *
-	 * @since Twenty Seventeen 1.1
+	 * @since Food Ordering 1.1
 	 *
 	 * @param array $starter_content Array of starter content.
 	 */
@@ -245,9 +245,9 @@ function foodordering_content_width() {
 	}
 
 	/**
-	 * Filter Twenty Seventeen content width of the theme.
+	 * Filter Food Ordering content width of the theme.
 	 *
-	 * @since Twenty Seventeen 1.0
+	 * @since Food Ordering 1.0
 	 *
 	 * @param int $content_width Content width in pixels.
 	 */
@@ -287,7 +287,7 @@ function foodordering_fonts_url() {
 /**
  * Add preconnect for Google Fonts.
  *
- * @since Twenty Seventeen 1.0
+ * @since Food Ordering 1.0
  *
  * @param array  $urls           URLs to print for resource hints.
  * @param string $relation_type  The relation type the URLs are printed.
@@ -347,7 +347,7 @@ add_action( 'widgets_init', 'foodordering_widgets_init' );
  * Replaces "[...]" (appended to automatically generated excerpts) with ... and
  * a 'Continue reading' link.
  *
- * @since Twenty Seventeen 1.0
+ * @since Food Ordering 1.0
  *
  * @param string $link Link to single post/page.
  * @return string 'Continue reading' link prepended with an ellipsis.
@@ -371,7 +371,7 @@ add_filter( 'excerpt_more', 'foodordering_excerpt_more' );
  *
  * Adds a `js` class to the root `<html>` element when JavaScript is detected.
  *
- * @since Twenty Seventeen 1.0
+ * @since Food Ordering 1.0
  */
 function foodordering_javascript_detection() {
 	echo "<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>\n";
@@ -463,7 +463,7 @@ add_action( 'wp_enqueue_scripts', 'foodordering_scripts' );
  * Add custom image sizes attribute to enhance responsive image functionality
  * for content images.
  *
- * @since Twenty Seventeen 1.0
+ * @since Food Ordering 1.0
  *
  * @param string $sizes A source size value for use in a 'sizes' attribute.
  * @param array  $size  Image size. Accepts an array of width and height
@@ -490,7 +490,7 @@ add_filter( 'wp_calculate_image_sizes', 'foodordering_content_image_sizes_attr',
 /**
  * Filter the `sizes` value in the header image markup.
  *
- * @since Twenty Seventeen 1.0
+ * @since Food Ordering 1.0
  *
  * @param string $html   The HTML image tag markup being filtered.
  * @param object $header The custom header object returned by 'get_custom_header()'.
@@ -509,7 +509,7 @@ add_filter( 'get_header_image_tag', 'foodordering_header_image_tag', 10, 3 );
  * Add custom image sizes attribute to enhance responsive image functionality
  * for post thumbnails.
  *
- * @since Twenty Seventeen 1.0
+ * @since Food Ordering 1.0
  *
  * @param array $attr       Attributes for the image markup.
  * @param int   $attachment Image attachment ID.
@@ -530,7 +530,7 @@ add_filter( 'wp_get_attachment_image_attributes', 'foodordering_post_thumbnail_s
 /**
  * Use front-page.php when Front page displays is set to a static page.
  *
- * @since Twenty Seventeen 1.0
+ * @since Food Ordering 1.0
  *
  * @param string $template front-page.php.
  *
@@ -545,7 +545,7 @@ add_filter( 'frontpage_template',  'foodordering_front_page_template' );
  * Modifies tag cloud widget arguments to display all tags in the same font size
  * and use list format for better accessibility.
  *
- * @since Twenty Seventeen 1.4
+ * @since Food Ordering 1.4
  *
  * @param array $args Arguments for tag cloud widget.
  * @return array The filtered arguments for tag cloud widget.

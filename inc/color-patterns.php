@@ -1,9 +1,9 @@
 <?php
 /**
- * Twenty Seventeen: Color Patterns
+ * Food Ordering: Color Patterns
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage FoodOrdering
  * @since 1.0
  */
 
@@ -14,9 +14,9 @@ function foodordering_custom_colors_css() {
 	$hue = absint( get_theme_mod( 'colorscheme_hue', 250 ) );
 
 	/**
-	 * Filter Twenty Seventeen default saturation level.
+	 * Filter Food Ordering default saturation level.
 	 *
-	 * @since Twenty Seventeen 1.0
+	 * @since Food Ordering 1.0
 	 *
 	 * @param int $saturation Color saturation level.
 	 */
@@ -25,7 +25,7 @@ function foodordering_custom_colors_css() {
 	$saturation = $saturation . '%';
 	$css = '
 /**
- * Twenty Seventeen: Color Patterns
+ * Food Ordering: Color Patterns
  *
  * Colors are ordered from dark to light.
  */
@@ -561,9 +561,9 @@ body.colors-custom,
 }';
 
 	/**
-	 * Filters Twenty Seventeen custom colors CSS.
+	 * Filters Food Ordering custom colors CSS.
 	 *
-	 * @since Twenty Seventeen 1.0
+	 * @since Food Ordering 1.0
 	 *
 	 * @param string $css        Base theme colors CSS.
 	 * @param int    $hue        The user's selected color hue.
