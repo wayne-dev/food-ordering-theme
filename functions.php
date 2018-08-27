@@ -425,6 +425,7 @@ function foodordering_scripts() {
 		wp_enqueue_style( 'foodordering-ie9', get_theme_file_uri( '/assets/css/ie9.css' ), array( 'foodordering-style' ), '1.0' );
 		wp_style_add_data( 'foodordering-ie9', 'conditional', 'IE 9' );
 	}
+	wp_enqueue_style( 'foodordering-nav', get_theme_file_uri( '/assets/css/nav.css' ), array( 'foodordering-style' ), '1.0' );
 	// Bootstraps
 	wp_enqueue_style( 'foodordering-bootstrap', get_theme_file_uri( '/assets/css/bootstrap.css' ), array( 'foodordering-style' ), '1.0' );
 	wp_enqueue_script( 'bootstrap', get_theme_file_uri( '/assets/js/bootstrap.js' ), array( 'jquery' ), '4.1.3', true );
@@ -449,7 +450,7 @@ function foodordering_scripts() {
 		$foodordering_l10n['icon']           = foodordering_get_svg( array( 'icon' => 'angle-down', 'fallback' => true ) );
 	}
 
-	wp_enqueue_script( 'foodordering-global', get_theme_file_uri( '/assets/js/global.js' ), array( 'jquery' ), '1.0', true );
+	wp_enqueue_script( 'foodordering-global', get_theme_file_uri( '/assets/js/main.js' ), array( 'jquery' ), '1.0', true );
 
 	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
 
@@ -458,6 +459,13 @@ function foodordering_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	wp_enqueue_style( 'foodordering-main', get_theme_file_uri( '/assets/css/main.css' ), array( 'foodordering-style' ), '1.0' );
+	/*  Font Awesome CSS */
+	wp_enqueue_style( 'fontawesome-nav', 		"https://use.fontawesome.com/releases/v5.1.0/css/solid.css", array( 'foodordering-style' ), '5.1.0' );
+	wp_enqueue_style( 'fontawesome-regular', 	"https://use.fontawesome.com/releases/v5.1.0/css/regular.css", array( 'foodordering-style' ), '5.1.0' );
+	wp_enqueue_style( 'fontawesome-brands', 	"https://use.fontawesome.com/releases/v5.1.0/css/brands.css", array( 'foodordering-style' ), '5.1.0' );
+	wp_enqueue_style( 'fontawesome-fontawesome',"https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css", array( 'foodordering-style' ), '5.1.0' );
+	/* /Font Awesome CSS */
 }
 add_action( 'wp_enqueue_scripts', 'foodordering_scripts' );
 

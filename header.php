@@ -23,35 +23,80 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="container-fluid">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'foodordering' ); ?></a>
+<div  class="container-full">
+	<div  class="header">
+		<div class="top-bar">
+			<div class="container-fluid">
+			  <div class="row d-flex align-items-center">
+				<div class="col-sm-7 d-none d-sm-block">
+				  <ul class="list-inline mb-0">
+					<li class="list-inline-item pr-3 mr-0">
+					  <i class="fa fa-phone"></i>
+					</li>
+					<li class="list-inline-item px-3 border-left d-none d-lg-inline-block">Free shipping on orders over $300</li>
+				  </ul>
+				</div>
+				<div class="col-sm-5 d-flex justify-content-end">
+				  <!-- Language Dropdown-->
+				  <div class="dropdown border-right px-3">
+					<a id="langsDropdown" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+						English
+					</a>
+					<div aria-labelledby="langsDropdown" class="dropdown-menu dropdown-menu-right">
+						<a href="#" class="dropdown-item text-sm">
+						German
+						</a>
+						<a href="#" class="dropdown-item text-sm"> 
+							French
+						</a>
+					</div>
+				  </div>
+				  <!-- Currency Dropdown-->
+				  <div class="dropdown pl-3 ml-0"><a id="currencyDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle topbar-link">USD</a>
+					<div aria-labelledby="currencyDropdown" class="dropdown-menu dropdown-menu-right"><a href="#" class="dropdown-item text-sm">EUR</a><a href="#" class="dropdown-item text-sm"> GBP</a></div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		<nav class="navbar navbar-expand-sm navbar-white bg-white stickyheader">
+			<div class ='container bd-navbar '>
+				<a class="navbar-brand" href="#">Expand at sm</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"   >
+					<span class="navbar-toggler-icon"></span>
+				  </button>
 
-	<header id="masthead" class="site-header" role="banner">
-
-		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
-
-		<?php if ( has_nav_menu( 'top' ) ) : ?>
-			<div class="navigation-top">
-				<div class="wrap">
-					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
-				</div><!-- .wrap -->
-			</div><!-- .navigation-top -->
-		<?php endif; ?>
-
-	</header><!-- #masthead -->
+				  <div class="collapse navbar-collapse" id="navbarsExample03">
+					<ul class="navbar-nav mr-auto">
+					  <li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown03">
+						  <a class="dropdown-item" href="#">Action</a>
+						  <a class="dropdown-item" href="#">Another action</a>
+						  <a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					  </li>
+					</ul>
+					<form class="form-inline my-2 my-md-0">
+					  <input class="form-control" type="text" placeholder="Search">
+					</form>
+				  </div>
+			</div>
+		</nav>
+	</div>
 
 	<?php
 
-	/*
-	 * If a regular post or page, and not the front page, show the featured image.
-	 * Using get_queried_object_id() here since the $post global may not be set before a call to the_post().
-	 */
-	if ( ( is_single() || ( is_page() && ! foodordering_is_frontpage() ) ) && has_post_thumbnail( get_queried_object_id() ) ) :
-		echo '<div class="single-featured-image-header">';
-		echo get_the_post_thumbnail( get_queried_object_id(), 'foodordering-featured-image' );
-		echo '</div><!-- .single-featured-image-header -->';
-	endif;
 	?>
 
-	<div class="container">
+	<div class="container ">
 		<div id="content" class="site-content">
