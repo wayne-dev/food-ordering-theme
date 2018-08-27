@@ -2,7 +2,7 @@
 	var $body = $( 'body' ),
 		$stickyHeader = $body.find( '.stickyheader' );
 	function adjustScrollClass($this) {
-        if ($this.scrollTop() > 10) { // Set position from top to add class
+        if ($this.scrollTop() > $stickyHeader.position().top) { // Set position from top to add class
             $stickyHeader.addClass('fixed-top bg-dark').removeClass("bg-white");
             $('.left-logo .navbar-brand').addClass("hide");
         }
